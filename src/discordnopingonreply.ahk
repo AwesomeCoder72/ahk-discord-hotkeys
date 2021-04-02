@@ -1,11 +1,11 @@
 #SingleInstance, Force
 SendMode Input
-SetWorkingDir, C:\Users\Noah\Documents\Programs\AHK\discord\bin
+SetWorkingDir, %A_ScriptDir%
 
 Enter::
 if winactive("ahk_exe Discord.exe")
 {
-    ImageSearch, x, y, 0, 0, A_ScreenWidth, A_ScreenHeight, %A_ScriptDir%\reply_on2.png
+    ImageSearch, x, y, 0, 0, A_ScreenWidth, A_ScreenHeight, reply_on2.png
     newX:= x+3
     newY:= y+3
     if (errorlevel = 1)
